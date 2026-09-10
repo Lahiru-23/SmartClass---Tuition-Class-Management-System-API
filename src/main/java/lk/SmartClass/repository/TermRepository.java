@@ -1,4 +1,7 @@
 package lk.SmartClass.repository;
 
-public interface TermRepository {
-}
+import lk.SmartClass.entity.Term;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TermRepository extends JpaRepository<Term, Long> {}
+

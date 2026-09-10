@@ -1,4 +1,6 @@
 package lk.SmartClass.repository;
 
-public interface SubjectRepository {
-}
+import lk.SmartClass.entity.Subject;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SubjectRepository extends JpaRepository<Subject, Long> {}

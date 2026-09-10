@@ -1,4 +1,11 @@
 package lk.SmartClass.repository;
 
-public interface GuardianRepository {
+import lk.SmartClass.entity.Guardian;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface GuardianRepository extends JpaRepository<Guardian, Long> {
+    Optional<Guardian> findByUserId(Long userId);
+    boolean existsByUserId(Long userId);
 }

@@ -6,6 +6,8 @@ import lk.SmartClass.entity.ClassEntity;
 import lk.SmartClass.entity.Subject;
 import lk.SmartClass.entity.Teacher;
 import lk.SmartClass.entity.Term;
+import lk.SmartClass.exception.BadRequestException;
+import lk.SmartClass.exception.ResourceNotFoundException;
 import lk.SmartClass.repository.*;
 import lk.SmartClass.service.ClassService;
 import lombok.RequiredArgsConstructor;

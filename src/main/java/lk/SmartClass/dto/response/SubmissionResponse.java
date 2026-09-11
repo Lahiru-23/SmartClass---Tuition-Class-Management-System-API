@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.time.chrono.ChronoLocalDate;
 
 @Data
 @Builder
@@ -15,7 +16,7 @@ public class SubmissionResponse {
     private String assignmentTitle;
     private Long studentId;
     private String studentName;
-    private LocalDateTime submittedAt;
+    private ChronoLocalDate submittedAt;
     private String fileUrl;
     private Integer marksObtained;
     private Integer maxMarks;

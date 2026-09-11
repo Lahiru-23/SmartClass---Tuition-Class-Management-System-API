@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.chrono.ChronoLocalDate;
 import java.util.List;
 
 @Service
@@ -79,14 +80,14 @@ public class SubmissionServiceImpl implements SubmissionService {
     }
 
     private SubmissionResponse toResponse(AssignmentSubmission s) {
-        boolean late = s.getSubmittedAt().toLocalDate().isAfter(s.getAssignment().getDueDate());
+        boolean late = s.getSubmittedAt().toLocalDate().isAfter(ChronoLocalDate.from(s.getAssignment().getDueDate()));
         return SubmissionResponse.builder()
                 .id(s.getId())
                 .assignmentId(s.getAssignment().getId())
                 .assignmentTitle(s.getAssignment().getTitle())
                 .studentId(s.getStudent().getId())
                 .studentName(s.getStudent().getFullName())
-                .submittedAt(s.getSubmittedAt())
+                .submittedAt(ChronoLocalDate.from(s.getSubmittedAt()))
                 .fileUrl(s.getFileUrl())
                 .marksObtained(s.getMarksObtained())
                 .maxMarks(s.getAssignment().getMaxMarks())

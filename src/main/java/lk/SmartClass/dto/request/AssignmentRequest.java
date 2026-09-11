@@ -8,6 +8,7 @@ import lombok.Data;
 
 import java.time.LocalDate;
 
+
 @Data
 public class AssignmentRequest {
     @NotNull(message = "Class ID is required") private Long classId;

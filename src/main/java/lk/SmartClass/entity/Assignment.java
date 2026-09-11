@@ -3,10 +3,11 @@ package lk.SmartClass.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "assignment")
+@Table(name = "assignments")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -26,7 +27,7 @@ public class Assignment {
     private String description;
 
     @Column(name = "due_date", nullable = false)
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
 
     @Column(name = "max_marks", nullable = false)
     @Builder.Default

@@ -6,6 +6,7 @@ import lk.SmartClass.entity.Guardian;
 import lk.SmartClass.entity.Student;
 import lk.SmartClass.entity.User;
 import lk.SmartClass.exception.BadRequestException;
+import lk.SmartClass.exception.ResourceNotFoundException;
 import lk.SmartClass.repository.GuardianRepository;
 import lk.SmartClass.repository.StudentRepository;
 import lk.SmartClass.repository.UserRepository;

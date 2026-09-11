@@ -1,0 +1,823 @@
+2026-09-11T04:32:39.262+05:30  INFO 27572 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 27572 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:32:39.263+05:30  INFO 27572 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:32:39.394+05:30  WARN 27572 --- [SmartClass ] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [org.springframework.security.config.annotation.web.socket.WebSocketMessageBrokerSecurityConfiguration]
+2026-09-11T04:32:39.536+05:30 ERROR 27572 --- [SmartClass ] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [org.springframework.security.config.annotation.web.socket.WebSocketMessageBrokerSecurityConfiguration]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:288) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:619) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:363) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:356) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at lk.SmartClass.SmartClassApplication.main(SmartClassApplication.java:9) ~[classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/web/socket/config/annotation/WebSocketMessageBrokerConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:98) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:85) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:713) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1062) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:443) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:387) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:283) ~[spring-context-6.2.19.jar:6.2.19]
+	... 21 common frames omitted
+
+2026-09-11T04:39:38.566+05:30  INFO 13356 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 13356 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:39:38.567+05:30  INFO 13356 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:39:38.978+05:30  WARN 13356 --- [SmartClass ] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+2026-09-11T04:39:38.982+05:30  INFO 13356 --- [SmartClass ] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-11T04:39:38.991+05:30 ERROR 13356 --- [SmartClass ] [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:191) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at lk.SmartClass.SmartClassApplication.main(SmartClassApplication.java:9) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.socket.MessageMatcherAuthorizationManagerConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:755) ~[spring-beans-6.2.19.jar:6.2.19]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:687) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:658) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1715) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:640) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:612) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:597) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanDefinitionsForType(OnBeanCondition.java:326) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanDefinitionsForType(OnBeanCondition.java:315) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:214) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.evaluateConditionalOnMissingBean(OnBeanCondition.java:197) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/messaging/access/intercept/MessageMatcherDelegatingAuthorizationManager$Builder
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.19.jar:6.2.19]
+	... 34 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.messaging.access.intercept.MessageMatcherDelegatingAuthorizationManager$Builder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 38 common frames omitted
+
+2026-09-11T04:41:56.799+05:30  INFO 26724 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 26724 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:41:56.800+05:30  INFO 26724 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:41:57.136+05:30  WARN 26724 --- [SmartClass ] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+2026-09-11T04:41:57.140+05:30  INFO 26724 --- [SmartClass ] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-11T04:41:57.150+05:30 ERROR 26724 --- [SmartClass ] [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:191) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:792) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at lk.SmartClass.SmartClassApplication.main(SmartClassApplication.java:9) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.socket.MessageMatcherAuthorizationManagerConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@14dad5dc]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:755) ~[spring-beans-6.2.19.jar:6.2.19]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:687) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:658) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1715) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:640) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:612) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:597) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanDefinitionsForType(OnBeanCondition.java:326) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanDefinitionsForType(OnBeanCondition.java:315) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:214) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.evaluateConditionalOnMissingBean(OnBeanCondition.java:197) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.5.16.jar:3.5.16]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/security/messaging/access/intercept/MessageMatcherDelegatingAuthorizationManager$Builder
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.19.jar:6.2.19]
+	... 34 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.security.messaging.access.intercept.MessageMatcherDelegatingAuthorizationManager$Builder
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[na:na]
+	... 38 common frames omitted
+
+2026-09-11T04:42:39.181+05:30  INFO 24832 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 24832 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:42:39.182+05:30  INFO 24832 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:42:39.712+05:30  INFO 24832 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-11T04:42:39.772+05:30  INFO 24832 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 19 JPA repository interfaces.
+2026-09-11T04:42:40.178+05:30  INFO 24832 --- [SmartClass ] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-11T04:42:40.192+05:30  INFO 24832 --- [SmartClass ] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-11T04:42:40.193+05:30  INFO 24832 --- [SmartClass ] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-09-11T04:42:40.238+05:30  INFO 24832 --- [SmartClass ] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-11T04:42:40.238+05:30  INFO 24832 --- [SmartClass ] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1034 ms
+2026-09-11T04:42:40.421+05:30  INFO 24832 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-11T04:42:40.541+05:30  INFO 24832 --- [SmartClass ] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8f2e3e6
+2026-09-11T04:42:40.543+05:30  INFO 24832 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-11T04:42:40.571+05:30  INFO 24832 --- [SmartClass ] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/smartclass_db1?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true (MySQL 8.0)
+2026-09-11T04:42:40.601+05:30  INFO 24832 --- [SmartClass ] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2026-09-11T04:42:40.611+05:30  INFO 24832 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `smartclass_db1`: 2
+2026-09-11T04:42:40.611+05:30 ERROR 24832 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` has version 2, but no migration could be resolved in the configured locations !
+2026-09-11T04:42:40.615+05:30  INFO 24832 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` is up to date. No migration necessary.
+2026-09-11T04:42:40.688+05:30  INFO 24832 --- [SmartClass ] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-11T04:42:40.736+05:30  INFO 24832 --- [SmartClass ] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-09-11T04:42:40.762+05:30  INFO 24832 --- [SmartClass ] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-11T04:42:40.974+05:30  INFO 24832 --- [SmartClass ] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-11T04:42:41.016+05:30  WARN 24832 --- [SmartClass ] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-11T04:42:41.024+05:30  INFO 24832 --- [SmartClass ] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-11T04:42:41.860+05:30  INFO 24832 --- [SmartClass ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-11T04:42:41.892+05:30 ERROR 24832 --- [SmartClass ] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [announcement]
+2026-09-11T04:42:41.893+05:30 ERROR 24832 --- [SmartClass ] [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2026-09-11T04:42:41.917+05:30  INFO 24832 --- [SmartClass ] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-11T04:42:41.919+05:30  WARN 24832 --- [SmartClass ] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1803)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1166)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:883)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-11T04:42:41.919+05:30  WARN 24832 --- [SmartClass ] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:connection-adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1803)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1015)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-11T04:42:41.923+05:30  WARN 24832 --- [SmartClass ] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-09-11T04:42:41.923+05:30  INFO 24832 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-11T04:42:41.929+05:30  INFO 24832 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-11T04:42:41.935+05:30  INFO 24832 --- [SmartClass ] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-11T04:42:41.943+05:30 ERROR 24832 --- [SmartClass ] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:622) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at lk.SmartClass.SmartClassApplication.main(SmartClassApplication.java:9) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:517) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:219) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:193) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-3.5.16.jar:3.5.16]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1393) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1230) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:230) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:184) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:179) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:164) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:96) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:271) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:245) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4456) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.5.16.jar:3.5.16]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1393) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1230) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1777) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1660) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1723) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1472) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1715) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1660) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 81 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [announcement]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1824) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 93 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [announcement]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1871) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 100 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [announcement]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:136) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:99) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:77) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:289) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.19.jar:6.2.19]
+	... 104 common frames omitted
+
+2026-09-11T04:50:46.784+05:30  INFO 22812 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 22812 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:50:46.785+05:30  INFO 22812 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:50:47.242+05:30  INFO 22812 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-11T04:50:47.299+05:30  INFO 22812 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 19 JPA repository interfaces.
+2026-09-11T04:50:47.614+05:30  INFO 22812 --- [SmartClass ] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-11T04:50:47.622+05:30  INFO 22812 --- [SmartClass ] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-11T04:50:47.623+05:30  INFO 22812 --- [SmartClass ] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-09-11T04:50:47.665+05:30  INFO 22812 --- [SmartClass ] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-11T04:50:47.665+05:30  INFO 22812 --- [SmartClass ] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 856 ms
+2026-09-11T04:50:47.810+05:30  INFO 22812 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-11T04:50:47.899+05:30  INFO 22812 --- [SmartClass ] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45e140ae
+2026-09-11T04:50:47.900+05:30  INFO 22812 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-11T04:50:47.926+05:30  INFO 22812 --- [SmartClass ] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/smartclass_db1?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true (MySQL 8.0)
+2026-09-11T04:50:47.948+05:30  INFO 22812 --- [SmartClass ] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.010s)
+2026-09-11T04:50:47.958+05:30  INFO 22812 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `smartclass_db1`: 2
+2026-09-11T04:50:47.958+05:30 ERROR 22812 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` has version 2, but no migration could be resolved in the configured locations !
+2026-09-11T04:50:47.960+05:30  INFO 22812 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` is up to date. No migration necessary.
+2026-09-11T04:50:48.011+05:30  INFO 22812 --- [SmartClass ] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-11T04:50:48.037+05:30  INFO 22812 --- [SmartClass ] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-09-11T04:50:48.055+05:30  INFO 22812 --- [SmartClass ] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-11T04:50:48.213+05:30  INFO 22812 --- [SmartClass ] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-11T04:50:48.244+05:30  WARN 22812 --- [SmartClass ] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-11T04:50:48.251+05:30  INFO 22812 --- [SmartClass ] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-11T04:50:48.928+05:30  INFO 22812 --- [SmartClass ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-11T04:50:48.956+05:30 ERROR 22812 --- [SmartClass ] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [due_date] in table [assignments]; found [date (Types#DATE)], but expecting [datetime(6) (Types#TIMESTAMP)]
+2026-09-11T04:50:48.957+05:30 ERROR 22812 --- [SmartClass ] [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2026-09-11T04:50:48.970+05:30  INFO 22812 --- [SmartClass ] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-11T04:50:48.972+05:30  WARN 22812 --- [SmartClass ] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1803)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1166)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:883)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1016)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-11T04:50:48.972+05:30  WARN 22812 --- [SmartClass ] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:connection-adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1803)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1015)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-11T04:50:48.972+05:30  WARN 22812 --- [SmartClass ] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-09-11T04:50:48.972+05:30  INFO 22812 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-11T04:50:48.976+05:30  INFO 22812 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-11T04:50:48.982+05:30  INFO 22812 --- [SmartClass ] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-11T04:50:48.991+05:30 ERROR 22812 --- [SmartClass ] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:622) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at lk.SmartClass.SmartClassApplication.main(SmartClassApplication.java:9) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:517) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:219) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:193) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-3.5.16.jar:3.5.16]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1393) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1230) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:230) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:184) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:179) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:164) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:96) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:271) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:245) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4456) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.5.16.jar:3.5.16]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\LENOVO\Documents\SmartClass\target\classes\lk\SmartClass\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1393) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1230) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1777) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1660) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in lk.SmartClass.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1723) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1472) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1715) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1660) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 81 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [due_date] in table [assignments]; found [date (Types#DATE)], but expecting [datetime(6) (Types#TIMESTAMP)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1824) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 93 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [due_date] in table [assignments]; found [date (Types#DATE)], but expecting [datetime(6) (Types#TIMESTAMP)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1871) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 100 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [due_date] in table [assignments]; found [date (Types#DATE)], but expecting [datetime(6) (Types#TIMESTAMP)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:169) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:156) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:99) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:77) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:289) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.53.Final.jar:6.6.53.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.19.jar:6.2.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.19.jar:6.2.19]
+	... 104 common frames omitted
+
+2026-09-11T04:55:15.485+05:30  INFO 6924 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Starting SmartClassApplication using Java 25.0.4.1 with PID 6924 (C:\Users\LENOVO\Documents\SmartClass\target\classes started by LENOVO in C:\Users\LENOVO\Documents\SmartClass)
+2026-09-11T04:55:15.486+05:30  INFO 6924 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-09-11T04:55:15.962+05:30  INFO 6924 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-11T04:55:16.019+05:30  INFO 6924 --- [SmartClass ] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 19 JPA repository interfaces.
+2026-09-11T04:55:16.333+05:30  INFO 6924 --- [SmartClass ] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-11T04:55:16.340+05:30  INFO 6924 --- [SmartClass ] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-11T04:55:16.340+05:30  INFO 6924 --- [SmartClass ] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-09-11T04:55:16.377+05:30  INFO 6924 --- [SmartClass ] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-11T04:55:16.377+05:30  INFO 6924 --- [SmartClass ] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 868 ms
+2026-09-11T04:55:16.518+05:30  INFO 6924 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-11T04:55:16.607+05:30  INFO 6924 --- [SmartClass ] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1abcd059
+2026-09-11T04:55:16.609+05:30  INFO 6924 --- [SmartClass ] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-11T04:55:16.635+05:30  INFO 6924 --- [SmartClass ] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/smartclass_db1?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true (MySQL 8.0)
+2026-09-11T04:55:16.659+05:30  INFO 6924 --- [SmartClass ] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.010s)
+2026-09-11T04:55:16.669+05:30  INFO 6924 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `smartclass_db1`: 2
+2026-09-11T04:55:16.669+05:30 ERROR 6924 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` has version 2, but no migration could be resolved in the configured locations !
+2026-09-11T04:55:16.671+05:30  INFO 6924 --- [SmartClass ] [main] o.f.core.internal.command.DbMigrate      : Schema `smartclass_db1` is up to date. No migration necessary.
+2026-09-11T04:55:16.720+05:30  INFO 6924 --- [SmartClass ] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-11T04:55:16.746+05:30  INFO 6924 --- [SmartClass ] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-09-11T04:55:16.764+05:30  INFO 6924 --- [SmartClass ] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-11T04:55:16.924+05:30  INFO 6924 --- [SmartClass ] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-11T04:55:16.956+05:30  WARN 6924 --- [SmartClass ] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-11T04:55:16.962+05:30  INFO 6924 --- [SmartClass ] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-11T04:55:17.618+05:30  INFO 6924 --- [SmartClass ] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-11T04:55:17.639+05:30  INFO 6924 --- [SmartClass ] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-11T04:55:18.179+05:30  INFO 6924 --- [SmartClass ] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-09-11T04:55:18.180+05:30  WARN 6924 --- [SmartClass ] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-09-11T04:55:18.324+05:30  WARN 6924 --- [SmartClass ] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-11T04:55:18.413+05:30  INFO 6924 --- [SmartClass ] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-09-11T04:55:18.874+05:30  INFO 6924 --- [SmartClass ] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-11T04:55:18.879+05:30  INFO 6924 --- [SmartClass ] [main] lk.SmartClass.SmartClassApplication      : Started SmartClassApplication in 3.641 seconds (process running for 3.93)
+2026-09-11T04:56:01.956+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-11T04:56:01.956+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-11T04:56:01.957+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-11T04:56:02.051+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.SmartClass.controller.AuthController   : Login attempt for username: admin
+2026-09-11T04:56:02.316+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] lk.SmartClass.service.impl.AuthService   : User 'admin' logged in successfully
+2026-09-11T04:56:02.539+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T04:56:02.539+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T04:56:02.539+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T04:56:02.594+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T04:56:09.124+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:00:23.296+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:00:23.429+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.service.impl.TeacherServiceImpl      : Teacher created: id=1, name='kamal werathunga'
+2026-09-11T05:00:23.470+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:01:38.793+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:01:38.806+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.service.impl.TeacherServiceImpl      : Teacher created: id=2, name='shashini perera'
+2026-09-11T05:01:38.828+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:01:42.520+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:02:50.547+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:02:50.570+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.exception.GlobalExceptionHandler     : Bad request on /api/students: Invalid guardianId: 1
+2026-09-11T05:03:07.104+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:03:07.113+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Bad request on /api/students: Invalid guardianId: 1
+2026-09-11T05:03:12.445+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:03:12.453+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Bad request on /api/students: Invalid guardianId: 2
+2026-09-11T05:03:19.094+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:21.706+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:21.735+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.service.impl.GuardianServiceImpl     : Guardian created: id=1, name='Mr. Mathesha'
+2026-09-11T05:04:21.767+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:23.650+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:28.661+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:28.684+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.service.impl.StudentServiceImpl      : Student created: id=1, name='Pavan Mathesha'
+2026-09-11T05:04:28.717+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:04:39.685+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:05:59.296+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:05:59.310+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.service.impl.GuardianServiceImpl     : Guardian created: id=2, name='Mrs. Kalpna'
+2026-09-11T05:05:59.334+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:06:11.369+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:10.622+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:10.637+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.service.impl.StudentServiceImpl      : Student created: id=2, name='Pawani  methanandi'
+2026-09-11T05:07:10.659+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:17.725+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:19.278+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:36.499+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:07:40.687+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:08:27.943+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:08:27.977+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.exception.GlobalExceptionHandler     : Bad request on /api/classes: Invalid subjectId: 1112
+2026-09-11T05:08:33.710+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:08:33.736+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.service.impl.ClassServiceImpl        : Class created: id=1, name='grade 6'
+2026-09-11T05:08:33.778+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:08:44.310+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:09:12.509+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:09:12.522+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Bad request on /api/classes: Invalid termId: 3
+2026-09-11T05:09:18.669+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:09:18.681+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.service.impl.ClassServiceImpl        : Class created: id=2, name='grade 7'
+2026-09-11T05:09:18.705+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:09:44.428+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:09:44.442+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.service.impl.ClassServiceImpl        : Class created: id=3, name='grade 6'
+2026-09-11T05:09:44.474+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:00.774+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:27.260+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:27.277+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Bad request on /api/teachers/2: Invalid userId: 0
+2026-09-11T05:10:33.518+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:33.532+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.service.impl.TeacherServiceImpl      : Teacher updated: id=2
+2026-09-11T05:10:33.583+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:51.040+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:10:51.821+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:16.623+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:16.640+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.service.impl.ClassServiceImpl        : Class created: id=4, name='grade 7'
+2026-09-11T05:11:16.667+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.329+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.333+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.334+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.384+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.413+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:11:20.414+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:12:42.512+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:12:42.534+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.exception.GlobalExceptionHandler     : Bad request on /api/invoices: Invalid feeStructureId: 1
+2026-09-11T05:15:54.750+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:16:20.603+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:16:20.613+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.controller.AiChatController          : AI chat message from 'admin': How many students do we have?
+2026-09-11T05:16:45.571+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:16:45.572+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.controller.AiChatController          : AI chat message from 'admin': 5+5
+2026-09-11T05:18:16.573+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:18:16.582+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.exception.GlobalExceptionHandler     : Bad request on /api/invoices: Invalid feeStructureId: 5000
+2026-09-11T05:18:26.620+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:18:26.629+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.exception.GlobalExceptionHandler     : Bad request on /api/invoices: Invalid feeStructureId: 1
+2026-09-11T05:18:32.613+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:18:32.622+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Bad request on /api/invoices: Invalid feeStructureId: 30
+2026-09-11T05:19:05.419+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:05.429+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Bad request on /api/invoices: Invalid feeStructureId: 1
+2026-09-11T05:19:12.659+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.283+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.284+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.283+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.331+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.359+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:15.359+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:20.443+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.816+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.816+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.816+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.893+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.919+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:19:27.919+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:20:14.878+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.SmartClass.controller.AuthController   : Registration attempt for username: lahiru
+2026-09-11T05:20:14.900+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.exception.GlobalExceptionHandler     : Bad request on /api/auth/register: Username already taken
+2026-09-11T05:20:40.352+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.SmartClass.controller.AuthController   : Login attempt for username: lahiru
+2026-09-11T05:20:40.512+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.exception.GlobalExceptionHandler     : Failed authentication attempt on /api/auth/login
+2026-09-11T05:21:41.951+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.SmartClass.controller.AuthController   : Registration attempt for username: hiruni
+2026-09-11T05:21:42.124+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] lk.SmartClass.service.impl.AuthService   : New user registered: 'hiruni' with role 'STUDENT'
+2026-09-11T05:22:24.740+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:24.750+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:22:34.811+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:34.816+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/03: You are not allowed to access another student's records
+2026-09-11T05:22:38.130+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:39.078+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:40.771+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:40.775+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:22:47.379+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:47.384+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/01: You are not allowed to access another student's records
+2026-09-11T05:22:53.442+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:53.447+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/01: You are not allowed to access another student's records
+2026-09-11T05:22:54.250+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:54.922+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:55.751+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:57.335+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:57.340+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/01: You are not allowed to access another student's records
+2026-09-11T05:22:57.888+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:22:57.894+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/01: You are not allowed to access another student's records
+2026-09-11T05:23:17.270+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.SmartClass.controller.AuthController   : Login attempt for username: admin
+2026-09-11T05:23:17.430+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] lk.SmartClass.service.impl.AuthService   : User 'admin' logged in successfully
+2026-09-11T05:23:17.507+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:17.507+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:17.507+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:17.557+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:17.579+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:17.579+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:23:20.980+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:24:05.252+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:24:05.263+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.service.impl.StudentServiceImpl      : Student created: id=3, name='hiruni mallika'
+2026-09-11T05:24:05.285+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:24:49.484+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.SmartClass.controller.AuthController   : Login attempt for username: hiruni
+2026-09-11T05:24:49.642+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Failed authentication attempt on /api/auth/login
+2026-09-11T05:25:08.284+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.SmartClass.controller.AuthController   : Login attempt for username: hiruni
+2026-09-11T05:25:08.438+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] lk.SmartClass.service.impl.AuthService   : User 'hiruni' logged in successfully
+2026-09-11T05:25:08.492+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:08.496+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/01: You are not allowed to access another student's records
+2026-09-11T05:25:22.267+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:22.271+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:25:27.785+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:27.791+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/03: You are not allowed to access another student's records
+2026-09-11T05:25:29.298+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:30.272+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:31.199+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:31.991+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:31.998+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/03: You are not allowed to access another student's records
+2026-09-11T05:25:32.715+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:32.721+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:25:35.487+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:36.610+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:36.615+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/invoices/student/03: You are not allowed to access another student's records
+2026-09-11T05:25:59.577+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:25:59.582+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:26:00.214+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:26:00.219+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:26:00.695+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:26:00.700+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-8] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:26:00.870+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'hiruni' via JWT
+2026-09-11T05:26:00.875+05:30  WARN 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.exception.GlobalExceptionHandler     : Forbidden operation on /api/submissions/student/03: You are not allowed to access another student's records
+2026-09-11T05:26:27.861+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.SmartClass.controller.AuthController   : Login attempt for username: admin
+2026-09-11T05:26:28.044+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] lk.SmartClass.service.impl.AuthService   : User 'admin' logged in successfully
+2026-09-11T05:26:28.117+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.118+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-5] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.118+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.157+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.176+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.176+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:28.176+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:34.705+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:45.328+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:47.599+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:54.374+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:26:56.688+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:01.280+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:04.145+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.526+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.526+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.526+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-6] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.558+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.574+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-10] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.574+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:17.574+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-1] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:45.643+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:45.644+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.controller.AiChatController          : AI chat message from 'admin': how toenroll the classe
+2026-09-11T05:27:57.234+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:57.235+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.controller.AiChatController          : AI chat message from 'admin': How many students do we have?
+2026-09-11T05:27:58.037+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:27:58.039+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-2] l.S.controller.AiChatController          : AI chat message from 'admin': Any overdue invoices?
+2026-09-11T05:28:00.399+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:28:00.401+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-9] l.S.controller.AiChatController          : AI chat message from 'admin': How do I add a new class?
+2026-09-11T05:28:11.434+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:28:11.435+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-7] l.S.controller.AiChatController          : AI chat message from 'admin': What can you help with?
+2026-09-11T05:28:34.570+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:28:34.572+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-4] l.S.controller.AiChatController          : AI chat message from 'admin': Class capacity / enrollment status
+2026-09-11T05:28:52.713+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.security.JwtAuthenticationFilter     : Authenticated user 'admin' via JWT
+2026-09-11T05:28:52.715+05:30  INFO 6924 --- [SmartClass ] [http-nio-8080-exec-3] l.S.controller.AiChatController          : AI chat message from 'admin': what can you do?
+2026-09-11T05:31:16.951+05:30  INFO 6924 --- [SmartClass ] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-11T05:31:16.955+05:30  INFO 6924 --- [SmartClass ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-11T05:31:16.960+05:30  INFO 6924 --- [SmartClass ] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-11T05:31:16.962+05:30  INFO 6924 --- [SmartClass ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-11T05:31:16.963+05:30  INFO 6924 --- [SmartClass ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
